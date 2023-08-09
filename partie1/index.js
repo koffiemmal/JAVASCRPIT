@@ -150,7 +150,7 @@ switch (jour) {
         console.log("vous avez mal saisi le jour")
         break;
 } */
-let Heure = Number(prompt("rentrer lheure "));
+/* let Heure = Number(prompt("rentrer lheure "));
 
 let Minute = Number(prompt("rentrer les minutes "));
 let seconde = Number(prompt("rentrer les secondes "));
@@ -161,4 +161,25 @@ if ((seconde + 1) <= 59 && (seconde + 1) > 0) {
     seconde = 0;
 
     console.log("il est alors " + Heure + " H " + (Minute + 1) + " min" + seconde + " sec");
+} */
+let Heure = Number(prompt("il est quel heure"));
+let Minute = Number(prompt("combien de minutes ?"));
+let seconde = Number(prompt("combien de seconde ?"));
+if (seconde < 59 && seconde > 0) {
+    console.log("il est alors " + Heure + " H " + Minute + " min" + (seconde + 1) + " sec");
+} else {
+    seconde = 0;
+
+    if (Minute < 59 && Minute > 0) {
+        console.log("il est alors " + Heure + " H " + (Minute + 1) + " min" + seconde + " sec");
+    } else {
+        Minute = 0;
+        if (Heure < 23 && Heure > 0) {
+            console.log("il est alors " + (Heure + 1) + " H " + Minute + " min" + seconde + " sec");
+
+        } else {
+            Heure = 0;
+            console.log("il est alors " + Heure + " H " + Minute + " min" + seconde + " sec");
+        }
+    }
 }
