@@ -162,7 +162,7 @@ if ((seconde + 1) <= 59 && (seconde + 1) > 0) {
 
     console.log("il est alors " + Heure + " H " + (Minute + 1) + " min" + seconde + " sec");
 } */
-let Heure = Number(prompt("il est quel heure"));
+/* let Heure = Number(prompt("il est quel heure"));
 let Minute = Number(prompt("combien de minutes ?"));
 let seconde = Number(prompt("combien de seconde ?"));
 if (seconde < 59 && seconde > 0) {
@@ -182,4 +182,9 @@ if (seconde < 59 && seconde > 0) {
             console.log("il est alors " + Heure + " H " + Minute + " min" + seconde + " sec");
         }
     }
+} */
+let nombre = Number(prompt("quelle table voulez vous vous"));
+for (let i = 0; i < 13; i++) {
+    let resultat = Number(nombre * i);
+    console.log(nombre + "x" + i + " = " + resultat);
 }
