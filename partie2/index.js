@@ -116,7 +116,7 @@ addition(2, 3) * / */
 let monTableau = [1, 2, 3, 4, 5, 6, 7];
 parcour(monTableau); */
 
-
+/* 
 let tableau = [{ nom: "Wakanda", annee: 2014 }, { nom: "spiderman", annee: 2030 }, { nom: "sisia", annee: 2050 }, { nom: "Marvel", annee: 2080 }];
 
 //function for normal
@@ -138,4 +138,125 @@ function parcours(tableaus) {
 
     }
 }
-parcours(tableau)
+parcours(tableau) */
+/* let nombre1 = Number(prompt("entrer un nombre"))
+let nombre2 = Number(prompt("entrer un deuxieme nombre"))
+
+let Addition = (nbre1, nbre2) => {
+    console.log(`la somme des deux nombre est ${nbre1+nbre2}`)
+
+}
+Addition(nombre1, nombre2); */
+/* 
+let filmTab = ["sangoku", "naruto", "violetta", "rengoku"]
+for (let i of filmTab) {
+    console.log(i)
+} */
+/* let Parite = (nbre) => {
+    if (nbre % 2 == 0) {
+        console.log("nombre pair")
+    } else {
+        console.log("nombre impair")
+    }
+}
+
+
+function Addition(nbre1, nbre2) {
+    console.log(`la somme est ${nbre1+nbre2}`)
+    let nombre = nbre1 + nbre2
+    Parite(nombre);
+
+
+}
+let premier = Number(prompt("entrer le nombre"))
+let deuxieme = Number(prompt("entrer le nombre"))
+Addition(premier, deuxieme); */
+/* /* Parite(9); */
+/* let Tables = [1, 2, 4, 7, 85, 49, 27, 14, 58, 43, 21, 753, 954, 125, 8753, 96, 964, 42]
+
+
+let Tableau = (Tab) => {
+    for (let i of Tab) {
+        if (i % 2 != 0) {
+            console.log(i)
+        }
+    }
+}
+Tableau(Tables); * / */
+/* let Telephone = {
+        marque: "Iphone",
+        type: "iphone 14 pro max",
+
+        presentation() { console.log(`mon telephone est de marque ${this.marque} et c'est precisement ${this.type}`); }
+    }
+    /* console.log(`mon telephone est de marque ${Telephone.marque} et c'est precisement ${Telephone.type}`);
+    Telephone.marque = "samsung"
+    Telephone.type = "note 24"
+/*     console.log(`mon telephone est de marque ${Telephone.marque} et c'est precisement ${Telephone.type}`); */
+/* Telephone.presentation();
+Telephone.annee = "zone"; * / */
+
+/* let tableau = (Table) => {
+    for (let i of Table) {
+        console.log(i.Annee)
+
+    }
+}
+tableau(Tab) */
+/* let date = Tab[0].Annee;
+for (let i = 1; i < Tab.length; i++) {
+
+    if (date > Tab[i].Annee) {
+        date = Tab[i].Annee;
+
+
+
+
+    }
+}
+
+f    console.log(date); */
+/* console.log(superieur) * /
+let tab = [];
+for (i = 0; i < 10; i++) {
+    tab[i] = prompt("entrer la lettre")
+    console.log(tab[i])
+    tab = tab[i];
+} */
+/* for (let a of tab) {
+    console.log(a);
+} */
+
+/* let Tab = [{ nom: "Barbie", Annee: 2012 }, { nom: "wakanda", Annee: 2023 }, { nom: "spiderman", Annee: 2013 }, { nom: "darknet", Annee: 2058 }, { nom: "cybersec", Annee: 2024 }, { nom: "Markora", Annee: 1234 }, { nom: "Azus", Annee: 2054 }, { nom: "GOjo", Annee: 2022 }, ]
+let date = Tab[0].Annee;
+for (let a of Tab) {
+    if (date > a.Annee) {
+        date = a.Annee
+    }
+}
+console.log(date) */
+/* class Personne {
+    constructor(n, p) {
+        this.nom = n;
+        this.prenom = p;
+    }
+
+    presentation() {
+        console.log(`je m'appele ${this.nom} ${this.prenom}`)
+    }
+
+}
+let koffi = new Personne("KOFFI", "Satnislas");
+console.log(koffi);
+let audrey = new Personne("AUDREY", "audrey");
+console.log(audrey); */
+class Animal {
+    constructor(n) {
+        this.nom = n;
+    }
+
+}
+let chien = new Animal("Spike");
+console.log(chien);
+let chat = new Animal("minou");
+console.log(chat)
