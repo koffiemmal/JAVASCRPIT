@@ -184,7 +184,8 @@ let Messan = new Etudiant("MESSAN", "Emmanuel", 19);
 /* Messan.AjouterNote();
 Messan.Calcul(); * / */
 
-class Personnage {
+
+/* class Personnage {
     constructor(nom) {
         this.nom = nom;
     }
@@ -234,4 +235,21 @@ class Personnage {
 }
 let Gojo = new Personnage("gojo")
 let Sukuna = new Personnage("sukuna");
-Gojo.Attaquer(Sukuna, "epee")
+Gojo.Attaquer(Sukuna, "epee") */
+/* let tableau = [];
+let size = Number(prompt("combien de fois aimerais vous remplir votre tableau?"));
+for (let i = 0; i < size; i++) {
+    let nombre = Number(prompt("entrer le nombre"))
+    tableau.push({
+        nombre: nombre,
+    })
+}
+for (let j of tableau) {
+    let petit = j
+    for (let a of tableau) {
+        if (petit > a) {
+            petit = a;
+        }
+    }
+    console.log(petit)
+} */
