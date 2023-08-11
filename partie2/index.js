@@ -235,28 +235,40 @@ for (let a of Tab) {
     }
 }
 console.log(date) */
-/* class Personne {
-    constructor(n, p) {
-        this.nom = n;
-        this.prenom = p;
-    }
-
-    presentation() {
-        console.log(`je m'appele ${this.nom} ${this.prenom}`)
-    }
-
-}
-let koffi = new Personne("KOFFI", "Satnislas");
+/* let koffi = new Personne("KOFFI", "Satnislas");
 console.log(koffi);
 let audrey = new Personne("AUDREY", "audrey");
-console.log(audrey); */
+console.log(audrey); * /
 class Animal {
     constructor(n) {
         this.nom = n;
     }
 
 }
-let chien = new Animal("Spike");
 console.log(chien);
 let chat = new Animal("minou");
 console.log(chat)
+let chien = new Animal("Spike"); */
+class Personne {
+
+    constructor(n, p) {
+        this.nom = n;
+        this.prenom = p;
+    }
+    isliving = true;
+    presentation() {
+        console.log(`je m'appele ${this.nom} ${this.prenom}`)
+    }
+
+}
+class Professeur extends Personne {
+    frequenter = true;
+    constructor(nom, prenom, filiere, age) {
+        super(nom, prenom)
+        this.filiere = filiere;
+        this.age = age;
+    }
+
+}
+let agbodjan = new Professeur("AGBODJAN", "justin", "D", 48)
+console.log(agbodjan);
